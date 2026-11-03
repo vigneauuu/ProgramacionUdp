@@ -7,14 +7,16 @@ import { engine } from 'express-handlebars';
 import bcrypt from 'bcryptjs';
 
 
-/*--- ULTRA HYPER MEGA SECRET PASSWORD, PLEASE DONT HACK ME :) ---*/
-const clave = 'INSAAAID'
+/*---------- Configuración local de autenticación ----------*/
+const clave = process.env.JWT_SECRET;
+if (!clave) throw new Error('JWT_SECRET no está configurada');
 
 /*---------- CookieName----------*/
 const AUTH_COOKIE_NAME = 'nami'
 
 /*---------- DataBase Conection ----------*/
-const sql = neon('postgresql://neondb_owner:scR5o3JDNuzv@ep-cool-paper-a5dz9krs.us-east-2.aws.neon.tech/neondb?sslmode=require');
+if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL no está configurada');
+const sql = neon(process.env.DATABASE_URL);
 
 
 /*---------- Instantiate Express ----------*/

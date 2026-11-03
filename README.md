@@ -1,22 +1,5 @@
-## Recopilación de Códigos y Proyectos
+# Programación UDP — rama histórica
 
-> [!NOTE]
-> Este repositorio está diseñado como un recurso de aprendizaje, donde estare recopilando mis códigos y proyectos a medida que avanzo en mi formación como desarrollador. Los contenidos aquí presentados abarcan una variedad de temas y lenguajes de programación, con el objetivo de servir tanto como referencia futura para mí mismo como para compartir conocimiento con otros.
+Esta rama conserva una versión anterior de los ejercicios. El índice actualizado está en [master](https://github.com/vigneauuu/ProgramacionUdp/tree/master).
 
-### C++
-- Condicionales (if)
-- Bucles (for, while)
-- Funciones
-- Algoritmos de ordenamiento
-- Clases, herencia, encapsulamiento, polimorfismo
-
-### Java
-- Complejidad temporal
-- Algoritmos de búsqueda
-- Recursividad
-- Árboles
-- Grafos
-
-### HTML, CSS y Bootstrap
-- Semántica
-- Responsividad
+La segunda entrega web requiere `DATABASE_URL` y `JWT_SECRET` en el entorno local. Se retiraron los valores fijos, pero el historial conserva las versiones anteriores; si siguen en uso, hay que rotar las credenciales en sus servicios.
