@@ -1,55 +1,27 @@
-# Proyecto de Desarrollo Web - Despliegue en AWS EC2
+# Entregas de desarrollo web
 
-Este proyecto corresponde al desarrollo de una aplicación web que fue desplegada en un servidor EC2 de AWS. A continuación, se describen las características y fases de desarrollo, junto con las actualizaciones más importantes implementadas en la segunda entrega.
+Material académico de una tienda, conservado como antecedente de aprendizaje. No hay un despliegue público vigente verificado.
 
-## Desplegado en un Servicio EC2 de AWS
+## Primera entrega
 
-- **IP del Servidor:** [123.123.123](http://123.123.123.123)
+[PrimeraEntrega](PrimeraEntrega/) contiene una descripción histórica de la propuesta y un `index.html` vacío. Esta copia no incluye una página estática funcional.
 
-## Primer Entrega: Aplicación Básica
+## Segunda entrega
 
-La primera fase del proyecto incluyó la creación de una aplicación web simple que fue desplegada en una instancia de EC2 de AWS. Las características principales de esta fase fueron:
+[SegundaEntrega](SegundaEntrega/) incluye un servidor Express, vistas Handlebars, consultas SQL y recursos de una tienda. El código usa PostgreSQL, hashes bcrypt para contraseñas y JWT para autenticación.
 
-- Despliegue inicial en AWS EC2.
-- La aplicación utilizaba HTML estático y la lógica del servidor estaba "hardcodeada" directamente en las vistas.
+Para retomar esa entrega se necesita:
 
-## Segunda Entrega: Actualizaciones Importantes
+- Una base PostgreSQL propia con el esquema que espera el código.
+- `DATABASE_URL` y `JWT_SECRET` en el entorno local.
+- Completar las versiones `^x.x.x` que aún aparecen en `package.json` y regenerar el archivo de dependencias.
+- Revisar rutas, permisos y vistas antes de ejecutarla o desplegarla.
 
-En la segunda entrega se realizaron mejoras significativas al proyecto, entre las que destacan:
+El servidor declara el puerto 3000. No se ha verificado la ejecución de esta entrega durante la revisión del perfil. Usar bcrypt y JWT no acredita por sí solo la seguridad del sistema.
 
-### Uso de Express y Motor de Plantillas
+## Entregas posteriores
 
-- **Framework Express**: Se reemplazó la estructura básica por Express, un framework de Node.js para mejorar la gestión de rutas y middleware.
-  
-- **Motor de plantillas**: Se integró un motor de plantillas (Handlebars) para eliminar el "hardcodeo" de la lógica en las vistas y mejorar la reutilización de componentes.
+- [Entrega3WEB](https://github.com/vigneauuu/Entrega3WEB): API con Express y documentación OpenAPI.
+- [Entrega4WEB](https://github.com/vigneauuu/Entrega4WEB): interfaz HTML y JavaScript que consume una API.
 
-> [!TIP]  
-> Las vistas ahora se generan dinámicamente a partir de datos extraídos de la base de datos, haciendo más eficiente y mantenible el código.
-
-### Conexión a Base de Datos PostgreSQL
-
-Se integró una base de datos **PostgreSQL** para manejar la persistencia de datos, lo que permitió:
-
-- Almacenar y recuperar datos de forma estructurada.
-- Manejar productos, usuarios y otros datos de manera dinámica.
-
-> [!WARNING]  
-> Asegúrate de configurar las variables de entorno correctamente para conectar la aplicación a la base de datos. Las credenciales de PostgreSQL no deben ser hardcodeadas.
-
-### Seguridad Mejorada: Cifrado y Autenticación con JWT
-
-Para mejorar la seguridad de la aplicación, se implementaron las siguientes características:
-
-- **Cifrado de contraseñas**: Todas las contraseñas de los usuarios se cifran utilizando bcrypt antes de almacenarse en la base de datos.
-  
-- **Autenticación con JWT**: Se agregó un sistema de autenticación basado en tokens JWT (JSON Web Tokens) para validar las credenciales de los usuarios y gestionar sesiones de forma segura.
-
-> [!NOTE]  
-> Las cookies ahora almacenan tokens JWT tokenizados que se verifican en cada solicitud protegida. Asegúrate de que las rutas protegidas estén adecuadamente validadas.
-
-## Instalación y Configuración
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/usuario/proyecto-web.git
-   cd proyecto-web
+Las credenciales antiguas publicadas deben rotarse en el servicio correspondiente. Retirarlas del código no las elimina del historial.

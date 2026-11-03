@@ -1,16 +1,7 @@
-## Entregable 1
+# Primera entrega web — antecedente
 
-En esta primera fase, se ha desarrollado una página de tipo *landing page* o página estática. La estructura incluye todos los botones y elementos típicos de un e-commerce, aunque aún no se ha implementado la funcionalidad completa.
+La propuesta original era una página estática de tienda con Bootstrap: navegación, formularios de registro e inicio de sesión y catálogo.
 
-### Características:
-- **Login:** Usuarios y Administradores.
-- **Barra de navegación:** Presente en todo el sitio.
-- **Formularios de registro.**
-- **Catálogo de productos.**
+En esta copia del repositorio, `index.html` está vacío. Por tanto, esta carpeta conserva la descripción de la entrega y no permite abrir una página funcional ni comprobar las características propuestas.
 
->[!NOTE]
->Se ha utilizado el framework Bootstrap para garantizar la responsividad de la página, asegurando que sea adaptable a todo tipo de pantallas, tanto en el catálogo como en la barra de navegación.  
->En esta etapa, los botones de carrito, wallet, y añadir al carrito aún no tienen funcionalidad.
-
->[!TIP]
->Se puede garantizar la seguridad del login y vincular el stock de productos a una base de datos utilizando JavaScript.
+La siguiente etapa está en [SegundaEntrega](../SegundaEntrega/). Su estado y requisitos se explican en [HTML/read.md](../read.md).

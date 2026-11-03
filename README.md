@@ -1,26 +1,23 @@
-## Recopilación de Códigos y Proyectos
+# Programación UDP
 
-> [!NOTE]
-> Este repositorio está diseñado como un recurso de aprendizaje, donde estare recopilando mis códigos y proyectos a medida que avanzo en mi formación como desarrollador. Los contenidos aquí presentados abarcan una variedad de temas y lenguajes de programación, con el objetivo de servir tanto como referencia futura para mí mismo como para compartir conocimiento con otros.
+Recopilación de ejercicios y entregas académicas de mi formación en programación. Cada carpeta es una experiencia independiente; no constituye una sola aplicación.
 
-### C++
-- Condicionales (if)
-- Bucles (for, while)
-- Funciones
-- Algoritmos de ordenamiento
-- Clases, herencia, encapsulamiento, polimorfismo
+## Contenido
 
-### Java
-- Complejidad temporal
-- Algoritmos de búsqueda
-- Recursividad
-- Árboles
-- Grafos
+| Carpeta | Contenido |
+| --- | --- |
+| [C++](C++/) | Ejercicios de controles, solemnes y examen. |
+| [Java](Java/) | Ordenamiento, árboles binarios y AVL, colas de prioridad y heaps. |
+| [HTML](HTML/) | Antecedentes de entregas web y una tienda con Express y Handlebars. |
 
-### HTML, CSS y Bootstrap
-- Semántica
-- Responsividad
+Los ejemplos se conservan como material de aprendizaje. No hay un sistema de compilación ni una suite de pruebas común para todo el repositorio.
 
-### Segunda entrega web
+## Entregas web
 
-El ejemplo en `HTML/SegundaEntrega` usa PostgreSQL y JWT. Para ejecutarlo, configura `DATABASE_URL` y `JWT_SECRET` en el entorno con valores propios. No agregues credenciales al repositorio. La cadena de conexión y la clave antiguas estuvieron publicadas en el historial y deben considerarse comprometidas.
+[HTML/read.md](HTML/read.md) explica el estado de las carpetas. La primera entrega conserva documentación, pero su `index.html` está vacío. La segunda requiere PostgreSQL, `DATABASE_URL` y `JWT_SECRET` definidos localmente; su manifiesto aún tiene versiones de dependencias incompletas.
+
+La API y la interfaz de entregas posteriores están en [Entrega3WEB](https://github.com/vigneauuu/Entrega3WEB) y [Entrega4WEB](https://github.com/vigneauuu/Entrega4WEB).
+
+## Credenciales
+
+La conexión a PostgreSQL y una clave de firma antiguas estuvieron publicadas en el historial. Deben considerarse comprometidas: si siguen en uso, cambia la contraseña del rol de la base de datos y la clave JWT en el entorno que ejecute la aplicación. No agregues credenciales ni archivos `.env` a Git.
