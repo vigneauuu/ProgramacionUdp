@@ -20,3 +20,7 @@
 ### HTML, CSS y Bootstrap
 - Semántica
 - Responsividad
+
+### Segunda entrega web
+
+El ejemplo en `HTML/SegundaEntrega` usa PostgreSQL y JWT. Para ejecutarlo, configura `DATABASE_URL` y `JWT_SECRET` en el entorno con valores propios. No agregues credenciales al repositorio. La cadena de conexión y la clave antiguas estuvieron publicadas en el historial y deben considerarse comprometidas.
